@@ -1,0 +1,26 @@
+body {
+    background-color: #0a192f;
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgb(204, 214, 246);
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: column;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-style: none;
+
+    
+}
+
