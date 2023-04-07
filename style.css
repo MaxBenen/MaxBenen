@@ -1,43 +1,107 @@
+
+/* Set the background color of the entire page */
 body {
     background-color: #0a192f;
-    font-family: "Fira Code";                                          
-
-}
-
-a {
+  }
+  
+  /* Remove underline and change link color */
+  a {
     text-decoration: none;
-    color: rgb(204, 214, 246);
-}
-a:hover {
+    color: #ccd6f6;
+  }
+  
+  /* Change link color on hover and add transition effect */
+  a:hover {
     color: aquamarine;
-    transition: 300ms;
-}
-
-ul {
+    transition: 0.3s;
+  }
+  
+  /* Set style for an unordered list */
+  ul {
     display: flex;
-    list-style-type: none;
-    gap: 25px; 
+    list-style: none; /* Remove bullet points */
+    gap: 25px;
     margin-left: auto;
     padding: 0;
     align-items: center;
-}
-
-.header {
+  }
+  
+  /* Set style for header section */
+  .header {
+    font-family: "Fira Code";
     display: flex;
     font-size: 13px;
-    padding: 14px ;
-}
-
-.cv-button{
-    color: rgb(204, 214, 246);
+    padding: 14px;
+  }
+  
+  /* Set style for CV button */
+  .cv-button {
+    color: #ccd6f6;
     background-color: transparent;
-    border: 1px solid ;
+    border: 1px solid;
     padding: 0.75rem 1rem;
-    border-radius: 10px;
-}
-.cv-button:hover {
+    border-radius: 7px;
+  }
+  
+  /* Change CV button style on hover and add transition effect */
+  .cv-button:hover {
     color: aquamarine;
     background-color: rgba(127, 255, 212, 0.132);
-    transition: 300ms;
-}
+    transition: 0.3s;
+  }
+  
+  /* Set style for introduction section */
+  .intro {
+    display: flex;
+    gap: 10px;
+    padding: 0 10%; /* Set padding to 10% on left and right */
+    font-family: "NTR", sans-serif;
+    font-size: 86px;
+    color: #ccd6f6;
+  }
+  
+  /* Change color for name in introduction section */
+  .intro-name {
+    color: aquamarine;
+  }
 
+  /* Set animation for blinking cursor */
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;ß
+    }
+  }
+  
+  /* Add blinking cursor after intro span */
+  .intro::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: aquamarine;
+
+  }
+
+  @media only screen and (max-width: 767px) {
+    .intro {
+      font-size: 60px;
+      padding: 0 10px;
+      text-align: center;
+      white-space: nowrap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+  
+    .intro-name {
+      font-size: 60px;
+      color: aquamarine;
+    }
+    
+  }
+  
