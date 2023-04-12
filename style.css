@@ -86,12 +86,11 @@ body {
     color: aquamarine;
   }
 
-.section-aboutme{
+.section-intro{
   display: flex;
   font-size: 50px;
   font-family: "NTR", sans-serif;
   color: rgb(136, 146, 176);
-  display: flex;
   gap: 10px;
   padding: 0 15%; /* Set padding to 10% on left and right */
   margin-top: -150px;
@@ -99,11 +98,80 @@ body {
 }
 
 
-.aboutme-text {
+.intro-text {
     font-size: 20px;
     max-width: 500px;
     margin-top: -35px;
 }
+
+.say-hi {
+    position: relative; /* Add position relative to the button */
+    color: aquamarine;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 7px;
+    margin-right: 85%;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center; /* Align the button content to the left */
+    padding-left: 50px;
+    white-space: nowrap;
+  }
+  
+  /* Add the envelope icon using ::before pseudo-element */
+  .say-hi::before {
+    content: "\2709"; /* Add the envelope unicode */
+    display: inline-block;
+    font-size: 40px;
+    position: absolute;
+    left: 20px; /* Adjust the position of the icon as needed */
+    top: 47%;
+    transform: translateY(-50%);
+    color: aquamarine; /* Match the color of the button */
+  }
+  
+  /* Change Say-hi button style on hover and add transition effect */
+  .say-hi:hover {
+    color: #ccd6f6;
+    background-color: rgba(127, 255, 212, 0.132);
+    transition: 0.3s;
+  }
+  
+  /* Change the hover style for the envelope icon */
+  .say-hi:hover::before {
+    color: #ccd6f6;
+    transition: 0.3s;
+  }
+  
+  .about-section{
+    display: flex;
+    font-size: 50px;
+    font-family: "NTR", sans-serif;
+    color: rgb(136, 146, 176);
+    gap: 10px;
+    padding: 0 15%; /* Set padding to 10% on left and right */
+    margin-top: auto;
+    flex-direction: column;
+  }
+
+  .about-title:after {
+    content: "";
+    display: block;
+    width: 300px;ß
+    margin-top: 39px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: red;
+}
+
+
+  .about-title{
+    font-family: "Fira Code";
+    color: #ccd6f6;
+    font-size: 30px;
+
+  }
+  
 
 
   @media only screen and (max-width: 767px) {
@@ -116,6 +184,7 @@ body {
       justify-content: center;
       align-items: center;
       margin-top: 50px;
+      margin-bottom: -80px;
     }
   
     .intro-name {
@@ -123,7 +192,7 @@ body {
       color: aquamarine;
     }
     
-    .aboutme-title {
+    .intro-title {
         white-space: normal;
         display: inline-block;
         max-width: 90%;
@@ -134,12 +203,19 @@ body {
 
 
 
-      .section-aboutme {
+      .section-intro {
         margin-top: 50px;
         align-items: center;
         text-align: center;
         padding: 0 10%;
+        margin-top: 50px;
       }
 
+      .intro-text{
+        margin-top: 5px;
+      }
+      .say-hi{
+        margin: 0 auto; 
+      }
   }
 
