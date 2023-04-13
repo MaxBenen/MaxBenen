@@ -92,7 +92,8 @@ body {
   font-family: "NTR", sans-serif;
   color: rgb(136, 146, 176);
   gap: 10px;
-  padding: 0 15%; /* Set padding to 10% on left and right */
+  padding-left: 15%;
+  padding-right: 25%;
   margin-top: -150px;
   flex-direction: column;
 }
@@ -116,6 +117,7 @@ body {
     text-align: center; /* Align the button content to the left */
     padding-left: 50px;
     white-space: nowrap;
+    flex-shrink: 0;
   }
   
   /* Add the envelope icon using ::before pseudo-element */
@@ -142,27 +144,31 @@ body {
     color: #ccd6f6;
     transition: 0.3s;
   }
-  
-  .about-section{
-    display: flex;
-    font-size: 50px;
+
+  .aboutme-section{
+    padding-left: 15%;
+    padding-right: 25%;
     font-family: "NTR", sans-serif;
-    color: rgb(136, 146, 176);
-    gap: 10px;
-    padding: 0 15%; /* Set padding to 10% on left and right */
-    margin-top: auto;
-    flex-direction: column;
+    color: #ccd6f6;
+  }
+  
+  .header-section{
+    padding-top: 3%;
+    display: flex;
+    padding-bottom: 42px;
+    width: 100vw;
   }
 
-  .about-title:after {
+  .header-section:after {
     content: "";
     display: block;
-    width: 300px;ß
+    width: 300px;
     margin-top: 39px;
     height: 1px;
     margin-left: 20px;
-    background-color: red;
-}
+    margin-top: 22px;
+    background-color: rgb(86, 98, 121);
+  }
 
 
   .about-title{
@@ -170,6 +176,13 @@ body {
     color: #ccd6f6;
     font-size: 30px;
 
+  }
+
+  .aboutme-text{
+    font-size: 20px;
+    font-family: "NTR", sans-serif;
+    color: rgb(136, 146, 176);
+    max-width: 480px;
   }
   
 
