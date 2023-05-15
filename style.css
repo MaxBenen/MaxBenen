@@ -145,7 +145,7 @@ body {
     transition: 0.3s;
   }
 
-  .aboutme-section{
+  .aboutme-section, .experience-section{
     padding-left: 15%;
     padding-right: 25%;
     font-family: "NTR", sans-serif;
@@ -183,11 +183,93 @@ body {
     font-family: "NTR", sans-serif;
     color: rgb(136, 146, 176);
     max-width: 480px;
+    line-height: 1.4;
   }
+
+  .skilz {
+    padding-top: 10px;
+    list-style-type: '\25B9'; /* Unicode character for White Right-Pointing Small Triangle */
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 10px));
+    padding-left: 15px;
+    font-size: 20px;
+  }
+  
+  .skilz li {
+    color: rgb(136, 146, 176); /* set the text color */
+    list-style-type: none; /* remove the default list bullet point */
+    position: relative; /* make the pseudo-element position relative to the list item */
+  }
+  
+  .skilz li::before {
+    content: '\25B9'; /* Unicode character for White Right-Pointing Small Triangle */
+    color: aquamarine; /* set the bullet point color */
+    position: absolute; /* position the pseudo-element absolutely */
+    left: -15px; /* move the pseudo-element 15 pixels to the left of the list item */
+  }
+
+
+
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+    
+  }
+  
+  .hamburger-menu .line {
+    width: 100%;
+    height: 2px;
+    background-color: #ccd6f6;
+    margin-bottom: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Animate the hamburger menu lines on active state */
+  .hamburger-menu.active .line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  
+  .hamburger-menu.active .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu.active .line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+
+
   
 
 
   @media only screen and (max-width: 767px) {
+
+    .header {
+      justify-content: space-between;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    .links {
+      display: none;
+    }
+  
+    .header.active .links {
+      display: flex;
+      flex-direction: column;
+      padding-right: 35%;
+    }
+
+   
+
     .intro {
       font-size: 60px;
       padding: 0 10px;
