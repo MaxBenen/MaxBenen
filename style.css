@@ -1,4 +1,3 @@
-
 /* Set the background color of the entire page */
 body {
     background-color: #0a192f;
@@ -50,7 +49,7 @@ body {
     transition: 0.3s;
   }
   
-  /* Set style for introduction section 
+  
   .intro {
     display: flex;
     gap: 10px;
@@ -59,10 +58,10 @@ body {
     font-size: 96px;
     color: #ccd6f6;
   }
-  */
-
+  
+ /*
   .intro {
-    display: inline-block;
+    display: flex;
     overflow: hidden;
     white-space: nowrap;
     animation: typing 5s steps(30, end);
@@ -72,13 +71,14 @@ body {
     font-size: 96px;
     color: #ccd6f6;
   }
-
+*/
   
   /* Change color for name in introduction section */
   .intro-name {
     color: aquamarine !important;
-    font-weight: 600;
+    font-weight: 600 !important;
   }
+
 
 /* Set animation for blinking cursor */
 @keyframes blink {
@@ -93,31 +93,6 @@ body {
     }
   }
 
-   /* Code add */
-
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-
-  
-  @keyframes blink-caret {
-    from, to {
-      background-color: transparent;
-    }
-    50% {
-      background-color: aqua;
-    }
-  }
-    /* Code add */
-  
-  
   /* Add blinking cursor after intro span */
   .intro::after {
     content: '|';
@@ -234,20 +209,20 @@ body {
     padding-left: 15px;
     font-size: 20px;
   }
-  
+
   .skilz li {
-    color: rgb(136, 146, 176); /* set the text color */
-    list-style-type: none; /* remove the default list bullet point */
-    position: relative; /* make the pseudo-element position relative to the list item */
+    color: rgb(136, 146, 176); 
+    list-style-type: none; 
+    position: relative; 
   }
   
   .skilz li::before {
-    content: '\25B9'; /* Unicode character for White Right-Pointing Small Triangle */
-    color: aquamarine; /* set the bullet point color */
-    position: absolute; /* position the pseudo-element absolutely */
-    left: -15px; /* move the pseudo-element 15 pixels to the left of the list item */
+    content: '\25B9'; 
+    color: aquamarine; 
+    position: absolute; 
+    left: -15px; 
   }
-
+  
 
 
   .hamburger-menu {
@@ -311,7 +286,7 @@ body {
    
 
     .intro {
-      font-size: 60px;
+      font-size: 50px;
       padding: 0 10px;
       text-align: center;
       white-space: nowrap;
