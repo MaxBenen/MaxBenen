@@ -1,10 +1,14 @@
 
+//hamburger menu for mobile 
 document.querySelector('.hamburger-menu').addEventListener('click', function() {
     this.classList.toggle('active');
     document.querySelector('.header').classList.toggle('active');
   });
 
-  const introElement = document.querySelector('.intro');
+
+
+//type animation 
+const introElement = document.querySelector('.intro');
 const introNameElement = document.querySelector('.intro-name');
 
 let introText = "";
@@ -54,59 +58,21 @@ function animateText(text, span) {
   }, 100);
 }
 
-typeAnimation();
-
-  
-
-/*
-const introElement = document.querySelector('.intro');
-const introNameElement = document.querySelector('.intro-name');
-
-let introText = "";
-
-// Get the text content from the HTML markup
-if (introElement) {
-  introText = introElement.textContent.trim();
-}
-
-introElement.textContent = ""; // Clear the initial content
-
-let index = 0;
-
-function typeAnimation() {
-  if (index < introText.length) {
-    const nextChar = introText.charAt(index);
-
-    if (introNameElement && index === introText.indexOf(introNameElement.textContent)) {
-      const introNameSpan = document.createElement("span");
-      introNameSpan.textContent = introNameElement.textContent;
-      introNameSpan.classList.add("intro-name");
-      introElement.appendChild(introNameSpan);
-      index += introNameElement.textContent.length - 1;
-    } else {
-      const nextSpan = document.createElement("span");
-      if (nextChar === " ") {
-        nextSpan.innerHTML = "&nbsp;";
-      } else {
-        nextSpan.textContent = nextChar;
-      }
-      introElement.appendChild(nextSpan);
-    }
-
-    index++;
-    setTimeout(typeAnimation, 100);
-  }
-}
-
-typeAnimation();
-*/
+typeAnimation(); 
 
 
+//fade in aniatmion 
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+        
+    });
+});
+const hiddenElements = document.querySelectorAll(".hidden");
 
-
-  
-
-  
-  
-  
-  
+hiddenElements.forEach((el) => observer.observe(el));

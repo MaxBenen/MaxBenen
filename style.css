@@ -49,7 +49,7 @@ body {
     transition: 0.3s;
   }
   
-  
+  /* Set style for intro section*/
   .intro {
     display: flex;
     gap: 10px;
@@ -58,21 +58,7 @@ body {
     font-size: 96px;
     color: #ccd6f6;
   }
-  
- /*
-  .intro {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typing 5s steps(30, end);
-    gap: 10px;
-    padding: 5% 15%;
-    font-family: "NTR", sans-serif;
-    font-size: 96px;
-    color: #ccd6f6;
-  }
-*/
-  
+   
   /* Change color for name in introduction section */
   .intro-name {
     color: aquamarine !important;
@@ -113,6 +99,27 @@ body {
 }
 
 
+/*fade in animation*/
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media(prefers-reduce-motion){
+  .hidden{
+    transition: none;
+  }
+} 
+/*fade in animation*/
+
 .intro-text {
     font-size: 20px;
     max-width: 500px;
@@ -120,6 +127,8 @@ body {
     
 }
 
+
+/*say hi button styling*/
  #say-hi {
     position: relative; /* Add position relative to the button */
     color: aquamarine;
@@ -160,6 +169,7 @@ body {
     transition: 0.3s;
   }
 
+  /*section styling*/
   .aboutme-section, .experience-section{
     padding-left: 15%;
     padding-right: 25%;
@@ -167,6 +177,7 @@ body {
     color: #ccd6f6;
   }
   
+  /*header styling*/
   .header-section{
     padding-top: 3%;
     display: flex;
@@ -174,6 +185,7 @@ body {
     width: 100vw;
   }
 
+  /*header animation*/
   .header-section:after {
     content: "";
     display: block;
@@ -216,11 +228,25 @@ body {
     position: relative; 
   }
   
+
   .skilz li::before {
     content: '\25B9'; 
     color: aquamarine; 
     position: absolute; 
     left: -15px; 
+  }
+
+  /*skilz animation*/
+  .skilz:nth-child(2){
+    transition-delay: 200ms;
+  }
+  .skilz:nth-child(3){
+    transition-delay: 500ms;
+    
+  }
+  .skilz:nth-child(4){
+    transition-delay: 700ms;
+    
   }
   
 
