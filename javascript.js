@@ -43,7 +43,7 @@ function typeAnimation() {
     }
 
     index++;
-    setTimeout(typeAnimation, 100);
+    setTimeout(typeAnimation, 200);
   }
 }
 

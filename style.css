@@ -1,6 +1,6 @@
-/* Set the background color of the entire page */
+/* Set the background color of the entire page #0a192f*/
 body {
-    background-color: #0a192f;
+    background-color: #050e1b;
   }
   
   /* Remove underline and change link color */
@@ -86,6 +86,7 @@ body {
     color: aquamarine;
   }
 
+  /*intro section styling*/
 .section-intro{
   display: flex;
   font-size: 50px;
@@ -138,7 +139,7 @@ body {
     margin-right: 85%;
     padding: 15px;
     font-size: 25px;
-    text-align: center; /* Align the button content to the left */
+    text-align: center; 
     padding-left: 50px;
     white-space: nowrap;
     flex-shrink: 0;
@@ -146,24 +147,24 @@ body {
   
   /* Add the envelope icon using ::before pseudo-element */
   #say-hi::before {
-    content: "\2709"; /* Add the envelope unicode */
+    content: "\2709"; /* envelope unicode */
     display: inline-block;
     font-size: 40px;
     position: absolute;
-    left: 20px; /* Adjust the position of the icon as needed */
+    left: 20px; 
     top: 47%;
     transform: translateY(-50%);
-    color: aquamarine; /* Match the color of the button */
+    color: aquamarine; 
   }
   
-  /* Change Say-hi button style on hover and add transition effect */
+  /* Say-hi button hover transition effect */
   #say-hi:hover {
     color: #ccd6f6;
     background-color: rgba(127, 255, 212, 0.132);
     transition: 0.3s;
   }
   
-  /* Change the hover style for the envelope icon */
+  /* hover style for the envelope icon */
   #say-hi:hover::before {
     color: #ccd6f6;
     transition: 0.3s;
@@ -197,14 +198,14 @@ body {
     background-color: rgb(86, 98, 121);
   }
 
-
+  /*about title styling */
   .about-title{
     font-family: "Fira Code";
     color: #ccd6f6;
     font-size: 30px;
 
   }
-
+/*about text styling*/
   .aboutme-text{
     font-size: 20px;
     font-family: "NTR", sans-serif;
@@ -213,6 +214,7 @@ body {
     line-height: 1.4;
   }
 
+  /*skilz section*/
   .skilz {
     padding-top: 10px;
     list-style-type: '\25B9'; /* Unicode character for White Right-Pointing Small Triangle */
@@ -221,14 +223,14 @@ body {
     padding-left: 15px;
     font-size: 20px;
   }
-
+  /*list styling*/
   .skilz li {
     color: rgb(136, 146, 176); 
     list-style-type: none; 
     position: relative; 
   }
   
-
+  /*skilz arrow*/
   .skilz li::before {
     content: '\25B9'; 
     color: aquamarine; 
@@ -250,7 +252,7 @@ body {
   }
   
 
-
+  /*hamburger menu*/
   .hamburger-menu {
     display: none;
     flex-direction: column;
@@ -288,7 +290,7 @@ body {
 
   
 
-
+  /*mobile content*/
   @media only screen and (max-width: 767px) {
 
     .header {
