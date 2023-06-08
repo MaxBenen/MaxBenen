@@ -25,11 +25,12 @@
   
           
         <ul class="links">
-            <li><a href="#">01. About</a></li>
-            <li><a href="#">02. Experience</a></li>
-            <li><a href="#">03. Work</a></li>
+            <li><a href="#">01. Home</a></li>
+            <li><a href="#">02. About</a></li>
+            <li><a href="#">03. Experience</a></li>
+            
+            <button class="cv-button"><a target="_blank" href="Max BenenCV (Max Benen).pdf">Resume</a></button>
 
-            <button class="cv-button">Resume</button>
         </ul>
     </div>
 
@@ -76,29 +77,45 @@
         </div>
 
 
-
+        
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Udemy')">UDEMY</button>
+                <button class="tablinks" id="refresh" onclick="openCity(event, 'Udemy')">UDEMY</button>
                 <button class="tablinks" onclick="openCity(event, 'The odin project')">THE ODIN PROJECT</button>
                 <button class="tablinks" onclick="openCity(event, 'Sololearn')">SOLOLEARN</button>
               </div>
 
 
-              
+            <ul  id="list-text" class="list-text">
+
               <div id="Udemy" class="tabcontent">
-                <h3 class="tab-title">certificate obtained @ <span class="company-certificate">Udemy</span></h3>
-                <p class ="tab-text">Udemy</p>
+                <h3 class="tab-title">certificate obtained @ <span><a class="company-certificate" target="_blank" href="UC-b37efcd2-7f12-4062-b5b2-3173c488243e.pdf">Udemy</a></span></h3>
+                <li class ="tab-text">Throughout this course, I have acquired comprehensive knowledge of JavaScript,
+                     enabling me to craft my own scripts and incorporate logical 
+                     elements into websites or applications.</li>
+                <li class="tab-text">
+                    I have grasped the fundamentals of HTML and CSS And how to implement 
+                    them in websites to provide an enjoyable UI/UX.
+                </li>
               </div>
               
               <div id="The odin project" class="tabcontent">
-                <h3 class="tab-title">certificate obtained @ <span class="company-certificate">The odin project</span></h3>
-                <p class ="tab-text">The odin project</p>
+                <h3 class="tab-title">certificate obtained @ <span><a class="company-certificate" target="_blank" href="#">The odin project</a></span></h3>
+                <li class ="tab-text">I can highlight that I have learned HTML, CSS, and the basics of web development,
+                     including structuring web pages and styling them with CSS.</li>
+                <li class="tab-text">I've mastered combining front-end and back-end skills to build full-stack applications. 
+                    The course has equipped me to showcase projects with client-side functionality.</li>
+                <li class="tab-text">I have gained a strong understanding of JavaScript programming, encompassing core concepts, 
+                    DOM manipulation, event handling, and asynchronous programming.</li>
               </div>
               
               <div id="Sololearn" class="tabcontent">
-                <h3 class="tab-title">certificate obtained @ <span class="company-certificate">Sololearn</span></h3>
-                <p class ="tab-text">Sololearn</p>
+                <h3 class="tab-title">certificate obtained @ <span><a class="company-certificate" target="_blank" href="cert-CT-LXNWBWS3.pdf">Sololearn</a></span></h3>
+                <li class ="tab-text">I successfully completed Sololearn's "Python for Beginners" course, 
+                    mastering fundamental concepts and gaining a solid understanding of Python programming</li>
+                <li class="tab-text">In the "Python Core" course, I delved into various advanced topics, including Object-Oriented Programming (OOP),
+                     Functional Programming, and much more, expanding my Python expertise.</li>
               </div>
+            </ul>
         
     </div>
 

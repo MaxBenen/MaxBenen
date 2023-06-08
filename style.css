@@ -289,7 +289,6 @@ body {
   /* Style the tab */
 .tab {
   float: left;
-  border: 1px solid #ccc;
   background-color: #050e1b;
   width: 30%;
   height: 300px;
@@ -332,7 +331,6 @@ body {
 
 /* Style the tab content */
 .tabcontent {
-  border: 1px solid #ccc;
   width: 70%;
   border-left: none;
   height: 300px;
@@ -344,6 +342,33 @@ body {
   color: rgb(136, 146, 176);
 }
 
+.list-text{
+  display: block;
+  margin-top: 0;
+  list-style-type: '\25B9'; /* Unicode character for White Right-Pointing Small Triangle */
+  grid-template-columns: repeat(2, minmax(150px, 10px));
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+  /*list styling*/
+  .list-text li {
+    color: rgb(136, 146, 176); 
+    list-style-type: none; 
+    position: relative; 
+    line-height: 25px;
+    padding-bottom: 20px;
+  }
+  
+  /*skilz arrow*/
+  .list-text li::before {
+    content: '\25B9'; 
+    color: aquamarine; 
+    position: absolute; 
+    left: -15px; 
+  }
+
+
 /* H3 Styling / tab title styling */
 
 .tab-title{
@@ -351,8 +376,10 @@ body {
   font-size: 30px;
 }
 
+
+
 .company-certificate{
-  color:aquamarine
+  color:aquamarine !important
 }
 
 
@@ -420,8 +447,21 @@ body {
       .intro-text{
         margin-top: 5px;
       }
-      .say-hi{
+      #say-hi{
         margin: 0 auto; 
       }
+
+      .tab{
+        width: 100%;
+        height: auto;
+      }
+
+      .tabcontent{
+        padding-left: 0;
+        width: 100%;
+      }
+
+      
+
   }
 

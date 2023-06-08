@@ -99,4 +99,12 @@ function openCity(evt, cityName) {
     evt.currentTarget.className += " active";
   }
 
+  //tab refresh 
+  setTimeout(function() {
+    var button = document.getElementById("refresh");
+    if (button) {
+      button.click();
+    }
+  }, 1000);
+
 
