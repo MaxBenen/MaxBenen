@@ -176,7 +176,7 @@ body {
   }
 
   /*section styling*/
-  .aboutme-section, .experience-section{
+  .aboutme-section, .experience-section, .projects-section{
     padding-left: 15%;
     padding-right: 25%;
     font-family: "NTR", sans-serif;
@@ -387,6 +387,78 @@ body {
 .company-certificate{
   color:aquamarine !important
 }
+
+
+#projects{
+  padding-left: 15%;
+    padding-right: 25%;
+    min-height: 60vh;
+}
+.project-gird{
+  display: grid;
+  grid-template-columns: repeat(3,minmax(300px,1fr));
+  grid-gap: 10px;
+}
+
+.project-container{
+  box-sizing: border-box;
+
+}
+.projects-card {
+  position: relative;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  position: relative;
+  height: 100%;
+  padding: 2rem 1.75rem;
+  background-color: #646c79;
+  border-radius: 16px;
+}
+
+.projects-card:hover {
+  transform: translateY(-7px);
+  background-color: #707f98;
+}
+
+
+.card-header:first-child{
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.card-header {
+  margin-top: -20px;
+  display: flex;
+  padding: 1.25em 0 !important;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: none !important;
+}
+
+.card-title{
+  margin-bottom: 0.75rem;
+  font-family: "NTR",sans-serif;
+    color: #ccd6f6;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.card-desc{
+  font-family: "NTR", sans-serif;
+  color: rgb(136, 146, 176);
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.card-tech{
+  font-size: 18px;
+    padding-bottom: 40px;
+}
+
+
+
 
 
   
