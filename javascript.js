@@ -108,3 +108,6 @@ function openCity(evt, cityName) {
   }, 1000);
 
 
+  //header scrolling function 
+
+

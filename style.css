@@ -1,6 +1,11 @@
 /* Set the background color of the entire page #0a192f*/
+/*Github pages*/
+html{
+  scroll-behavior: smooth;
+}
 body {
     background-color: #050e1b;
+  
   }
   
   /* Remove underline and change link color */
@@ -176,6 +181,7 @@ body {
     padding-right: 25%;
     font-family: "NTR", sans-serif;
     color: #ccd6f6;
+    overflow: hidden;
   }
   
   /*header styling*/
