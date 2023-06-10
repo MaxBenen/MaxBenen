@@ -105,7 +105,7 @@ body {
 }
 
 
-/*fade in animation*/
+/*fade in animation
 .hidden {
   opacity: 0;
   filter: blur(5px);
@@ -124,7 +124,7 @@ body {
     transition: none;
   }
 } 
-/*fade in animation*/
+fade in animation*/
 
 .intro-text {
     font-size: 20px;
@@ -391,10 +391,10 @@ body {
 
 #projects{
   padding-left: 15%;
-    padding-right: 25%;
-    min-height: 60vh;
+  padding-right: 25%;
+  min-height: 60vh;
 }
-.project-gird{
+.project-grid{
   display: grid;
   grid-template-columns: repeat(3,minmax(300px,1fr));
   grid-gap: 10px;
@@ -404,7 +404,8 @@ body {
   box-sizing: border-box;
 
 }
-.projects-card {
+.project-card {
+  background-color: #112240;
   position: relative;
   cursor: default;
   display: flex;
@@ -413,8 +414,8 @@ body {
   position: relative;
   height: 100%;
   padding: 2rem 1.75rem;
-  background-color: #646c79;
   border-radius: 16px;
+
 }
 
 .projects-card:hover {
@@ -427,7 +428,7 @@ body {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
 
-.card-header {
+.card-top {
   margin-top: -20px;
   display: flex;
   padding: 1.25em 0 !important;
@@ -447,14 +448,16 @@ body {
 
 .card-desc{
   font-family: "NTR", sans-serif;
-  color: rgb(136, 146, 176);
+  color:#8892b0;
   font-size: 18px;
   padding-bottom: 40px;
 }
 
 .card-tech{
   font-size: 18px;
-    padding-bottom: 40px;
+  padding-bottom: 40px;
+  font-family: "NTR",sans-serif;
+  color: #8892b0;
 }
 
 
