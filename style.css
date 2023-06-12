@@ -412,7 +412,7 @@ fade in animation*/
   flex-direction: column;
   /* align-items: flex-start; */
   position: relative;
-  height: 100%;
+  /*height: 100%;*/
   padding: 2rem 1.75rem;
   border-radius: 16px;
 
@@ -435,6 +435,15 @@ fade in animation*/
   flex-direction: row;
   justify-content: space-between;
   border-bottom: none !important;
+}
+
+.external-links{
+  flex-direction: row;
+}
+
+.folder{
+  margin: 0;
+  padding: 0;
 }
 
 .card-title{
@@ -502,7 +511,7 @@ fade in animation*/
     }
   
     .intro-name {
-      color: aquamarine;
+      color: #7fffd4;
       font-weight: 600;
     }
     
