@@ -63,19 +63,30 @@ typeAnimation();
 
 //fade in aniatmion 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        console.log(entry)
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        } else {
-            entry.target.classList.remove("show");
-        }
-        
-    });
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
 });
+
 const hiddenElements = document.querySelectorAll(".hidden");
 
-hiddenElements.forEach((el) => observer.observe(el));
+hiddenElements.forEach((el) => {
+  observer.observe(el);
+
+  // Check if the element is already visible in the viewport
+  const isVisible = el.getBoundingClientRect().top < window.innerHeight;
+
+  // If the element is already visible, add the "show" class immediately
+  if (isVisible) {
+    el.classList.add("show");
+  }
+});
+
+
+
+
 
 //tab 
 function openCity(evt, cityName) {
