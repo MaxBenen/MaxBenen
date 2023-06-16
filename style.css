@@ -135,7 +135,6 @@ body {
 
 /*say hi button styling*/
  #say-hi {
-    position: relative; /* Add position relative to the button */
     color: aquamarine;
     background-color: transparent;
     border: 1px solid;
@@ -143,18 +142,14 @@ body {
     margin-right: 85%;
     padding: 15px;
     font-size: 25px;
-    text-align: center; 
-    padding-left: 50px;
+    margin-top: 20%;
     white-space: nowrap;
     flex-shrink: 0;
   }
   
-  /* Add the envelope icon using ::before pseudo-element */
   #say-hi::before {
-    content: "\2709"; /* envelope unicode */
     display: inline-block;
     font-size: 40px;
-    position: absolute;
     left: 20px; 
     top: 47%;
     transform: translateY(-50%);
@@ -167,10 +162,11 @@ body {
     background-color: rgba(127, 255, 212, 0.132);
     transition: 0.3s;
   }
-  
-  /* hover style for the envelope icon */
-  #say-hi:hover::before {
-    color: #ccd6f6;
+
+
+  /* Say-hi button hover transition effect */
+  svg:hover {
+    fill: #ccd6f6;
     transition: 0.3s;
   }
 
@@ -553,6 +549,8 @@ body {
      .tabcontent{
       margin-bottom: 70vh;
      }
+
+ 
 
    
 
