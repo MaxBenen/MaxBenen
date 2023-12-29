@@ -467,7 +467,13 @@ body {
 
 
 
-
+@media (max-width: 600px) {
+            
+  .project-grid {
+    grid-template-columns: 300px;
+    margin-left: -50px;
+  }
+}
   
 
   /*mobile content*/
